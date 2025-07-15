@@ -1,0 +1,429 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Share+Tech&family=Teko:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Share+Tech&family=Teko:wght@300..700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  min-height: 100vh;
+}
+h1 {
+  font-size: 2.8rem;
+  font-family: "Inter", sans-serif;
+  color: rgb(36, 36, 36);
+}
+h2 {
+  font-size: 1.9rem;
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+
+/*firstSection*/
+.firstSection {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  min-height: 32vh;
+}
+.leftFirstSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+.rightFirstSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50%;
+}
+
+/*Team Image*/
+.teamImage {
+  width: 100%;
+  min-height: 10%;
+}
+
+/*secondSection*/
+.secondSection {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  min-height: 70vh;
+}
+.leftSecondSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+.leftFirstSection h1 {
+  padding: 3rem;
+}
+.rightSecondSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50%;
+}
+
+/*thirdSection*/
+.thirdSection {
+  background-color: rgb(17, 107, 218);
+  color: white;
+  width: 100%;
+  padding: 3rem;
+  height: auto;
+}
+.thirdSection p {
+  font-size: 2.1rem;
+}
+.profileThirdSection {
+  display: flex;
+  width: 25%;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+.profileThirdSection div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.profileThirdSection a {
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+}
+.profileThirdSection a:hover {
+  text-decoration: underline;
+}
+.profileThirdSection span {
+  font-size: 0.8rem;
+}
+.profileThirdSection img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100%;
+}
+
+/*forthSection*/
+.forthSection {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+}
+
+.leftForthSection {
+  width: 47%;
+  background-color: white;
+  height: auto;
+  color: black;
+  padding: 2rem 2rem 2rem 4rem;
+  text-align: left;
+}
+.leftForthSection button {
+  padding: 0.5rem;
+  color: rgb(243, 163, 16);
+  background-color: rgb(253, 216, 185);
+  border: none;
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+.leftForthSection h1 {
+  font-size: 2.5rem;
+  color: black;
+  margin-top: 1.3rem;
+}
+
+.rightForthSection {
+  width: 53%;
+  background-color: rgb(2, 14, 28);
+  height: auto;
+  color: white;
+  padding: 1rem 0 1rem 0;
+}
+.rightForthSection div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 90%;
+  height: 20%;
+  padding: 1rem;
+  transition: 0.3s ease;
+  border-radius: 10px;
+}
+.rightForthSection div:hover {
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 25%;
+}
+.rightForthSection div:hover span {
+  background-color: rgb(239, 168, 37);
+}
+.rightForthSection p {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  width: 80%;
+}
+.rightForthSection strong {
+  font-size: 1.1rem;
+}
+.rightForthSection span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1rem;
+  height: 1rem;
+  padding: 1rem;
+  background-color: white;
+  color: rgb(4, 13, 25);
+  border-radius: 50%;
+}
+
+/*fifthSection*/
+.fifthSection {
+  width: 100%;
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(141, 184, 238);
+}
+.mainFifthSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(6, 49, 102);
+  color: white;
+  text-align: center;
+  font-size: 1.05rem;
+  padding: 2rem 0 2rem 0;
+  border-radius: 20px;
+}
+.mainFifthSection div {
+  width: 50%;
+}
+.mainFifthSection button {
+  width: 12rem;
+  font-size: 0.95rem;
+  padding: 0.8rem;
+  font-weight: 500;
+  background-color: white;
+  color: rgb(17, 107, 218);
+  border: none;
+  border-radius: 7px;
+  transition: 0.2s ease;
+}
+.mainFifthSection button:hover,
+.leftSixthSection button:hover {
+  background-color: rgb(17, 107, 218);
+  color: white;
+}
+
+/*sixthSection*/
+.sixthSection {
+  width: 100%;
+  display: flex;
+  background-image: url(grey2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 80vh;
+}
+.leftSixthSection {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.leftSixthSection div {
+  width: 80%;
+}
+.leftSixthSection button {
+  margin-top: 1rem;
+  width: 7rem;
+  font-size: 0.95rem;
+  padding: 0.9rem;
+  font-weight: 500;
+  background-color: white;
+  color: rgb(17, 107, 218);
+  border: none;
+  border-radius: 7px;
+  transition: 0.1s ease;
+}
+.rightSixthSection {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rightSixthSection img{
+    width: 60%;
+    height: 75%;
+}
+
+
+/*Responsiveness*/
+@media (max-width: 1100px) {
+  .mainFifthSection button {
+    font-size: 0.8rem;
+  }
+  .mainFifthSection {
+    width: 97%;
+  }
+  .mainFifthSection div {
+    width: 70%;
+  }
+  .rightSixthSection img{
+    width: 64%;
+    height: 77%;
+}
+}
+@media (max-width: 1024px) {
+  .profileThirdSection {
+    width: 300px;
+  }
+  .forthSection {
+    display: flex;
+    flex-direction: column;
+  }
+  .leftForthSection,
+  .rightForthSection {
+    width: 100%;
+  }
+  .leftForthSection h1 {
+    font-size: 2rem;
+  }
+  .mainFifthSection button {
+    width: 10rem;
+  }
+  .mainFifthSection {
+    width: 93%;
+    padding: 1.3rem 0 1.3rem 0;
+  }
+}
+@media (max-width: 1000px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .thirdSection p {
+    font-size: 1.5rem;
+  }
+  .leftForthSection {
+    padding-top: 1.2rem;
+    padding-left: 2rem;
+  }
+  .leftForthSection button {
+    font-size: 0.8rem;
+  }
+  .rightForthSection div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    height: 20%;
+    padding: 1rem;
+  }
+  .rightForthSection div p {
+    text-align: center;
+  }
+  .mainFifthSection div {
+    width: 78%;
+  }
+  .rightSixthSection {
+    width: 60%;
+  }
+  .leftSixthSection{
+    width: 40%;
+  }
+  .leftSixthSection p{
+    font-size: .9rem;
+  }
+  .rightSixthSection img{
+    width: 70;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  .firstSection,
+  .secondSection {
+    flex-direction: column;
+  }
+  .leftFirstSection,
+  .leftSecondSection {
+    width: 100%;
+    display: block;
+    margin-left: 1rem;
+  }
+  .leftFirstSection h1,
+  .leftSecondSection h1 {
+    margin-top: 4rem;
+  }
+  .rightFirstSection,
+  .rightSecondSection {
+    display: block;
+    width: 100%;
+  }
+  .rightFirstSection p,
+  .rightSecondSection p,
+  .mainFifthSection {
+    font-size: 0.9rem;
+    padding: 1rem;
+  }
+  .leftSixthSection p{
+    font-size: .9rem;
+  }
+  .leftSixthSection div{
+    width: 95%;
+  }
+  .rightSixthSection{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+  }
+  .rightSixthSection img{
+    width: 95%;
+    height: 95%;
+    object-fit: cover;
+  }
+  .thirdSection {
+    padding: 1.1rem;
+  }
+  .thirdSection p {
+    font-size: 1.3rem;
+  }
+  .profileThirdSection a {
+    font-size: 0.9rem;
+  }
+  .mainFifthSection div {
+    width: 90%;
+  }
+  .sixthSection {
+    flex-direction: column;
+    min-height: 80vh;
+  }
+  .leftSixthSection{
+    width: 100%;
+    min-height: 50vh;
+  }
+}

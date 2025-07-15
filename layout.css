@@ -1,0 +1,457 @@
+/*header*/
+/*Marquee section*/
+.marqueeText {
+  text-align: center;
+  width: 80%;
+  animation: slide 6s ease-in-out infinite;
+}
+.marqueeContainer {
+  background-color: rgb(177, 208, 251);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  font-style: normal;
+  padding: 8px;
+  display: none;
+  justify-content: space-evenly;
+  width: 100%;
+  position: sticky;
+  top: 0;
+}
+.cancelButton {
+  color: white;
+  height: auto;
+  width: 2rem;
+  background-color: rgb(177, 208, 251);
+  border: none;
+  font-size: 1rem;
+}
+.enrolLink {
+  color: rgb(0, 106, 255);
+  text-decoration: none;
+}
+.enrolLink:hover {
+  border-bottom: 1px solid;
+}
+@keyframes slide {
+  50% {
+    transform: translateX(145px);
+  }
+}
+/*End of Marquee section*/
+
+/*Header styling*/
+.logo {
+  width: 60px;
+  height: 60px;
+  padding-left: 80px;
+  padding-right: 100px;
+}
+header {
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  background: linear-gradient(80deg, #fff9f1, #f9efef, #e6f0fe, #e6f0fe);
+
+}
+.side {
+  display: none;
+  flex-direction: column;
+  z-index: 1100;
+  position: fixed;
+  width: 30%;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.57);
+  transition: width 1s ease;
+}
+.side a {
+  width: 100%;
+  text-align: center;
+}
+#menuButton {
+  display: none;
+  cursor: pointer;
+}
+#closeButton{
+  cursor: pointer;
+}
+header a {
+  color: rgb(82, 81, 81);
+  text-decoration: none;
+  font-size: 0.9em;
+  font-weight: 550;
+  transition: 0.3s ease;
+  padding: 8px;
+}
+header a:hover {
+  color: rgb(20, 20, 20);
+}
+header button {
+  margin-right: 50px;
+  color: white;
+  height: 6em;
+  width: 8em;
+  padding: 4px;
+  background-color: rgb(0, 106, 255);
+  border: none;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: 0.5s ease;
+}
+header button:hover {
+  background-color: rgba(0, 106, 255, 0.1);
+  color: rgb(0, 106, 255);
+  /*border: .5px solid rgb(0, 106, 255)*/
+}
+.dropdown {
+  position: relative;
+}
+.resources_dropdown {
+  position: relative;
+}
+.resources_dropdown_menu {
+  display: none;
+  position: absolute;
+  padding: 1rem;
+  top: 100%;
+  margin-top: 0.2rem;
+  left: 0;
+  z-index: 1000;
+  color: black;
+  width: 14em;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  height: auto;
+  cursor: default;
+}
+.resources_dropdown:hover .resources_dropdown_menu {
+  display: block;
+}
+.resource_links {
+  font-weight: 500;
+  font-size: 0.9em;
+  margin-top: 8px;
+  text-align: center;
+  color: rgb(82, 81, 81);
+}
+.resource_links:hover {
+  background-color: white;
+  color: rgb(38, 38, 38);
+}
+.dropdownMenu {
+  display: none;
+  position: absolute;
+  padding: 10px;
+  top: 100%;
+  margin-top: 2px;
+  left: 0;
+  z-index: 1000;
+  color: black;
+  width: 30rem;
+  background-color: rgb(247, 247, 247);
+  border-radius: 8px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  height: auto;
+  cursor: default;
+}
+.dropdown:hover .dropdownMenu {
+  display: flex;
+  justify-content: space-around;
+}
+.courses,
+.program {
+  margin-top: 0.8rem;
+  text-align: left;
+  color: rgb(82, 81, 81);
+}
+a {
+  text-decoration: none;
+}
+/*header*/
+
+/*footer*/
+footer {
+  height: 150vh;
+  width: 100%;
+  background-color: rgb(4, 13, 25);
+}
+.main_footer_container {
+  width: 90%;
+  height: 130vh;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: white;
+  display: flex;
+}
+.footer_line {
+  width: 90%;
+  background-color: white;
+  height: 0.1%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
+}
+.left_footer {
+  width: 30%;
+  background-color: rgb(4, 13, 25);
+}
+.right_footer {
+  width: 70%;
+  background-color: rgb(4, 13, 25);
+}
+.right_footer a:hover {
+  text-decoration: underline;
+}
+.AItSchools_footer_logo {
+  width: 70px;
+  height: 75px;
+}
+.left_footer_links {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2em;
+  color: white;
+}
+.upper_right_footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 27%;
+  background-color: rgb(4, 13, 25);
+}
+.upper_right_footer a,
+.lower_right_footer a {
+  color: rgb(196, 196, 196);
+  font-size: 0.9rem;
+}
+.upper_right_footer h3,
+.lower_right_footer h3 {
+  color: white;
+}
+.schools_upper_footer {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+.companies_upper_footer {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 45px;
+  height: 42%;
+}
+.about_upper_footer {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 2px;
+  height: 57%;
+}
+.resources_upper_footer {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 20px;
+  height: 100%;
+}
+
+.lower_right_footer {
+  background-color: rgb(4, 13, 25);
+  display: flex;
+  width: 100%;
+}
+.featured_lower_footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 60px;
+  margin-left: 280px;
+  width: 200px;
+  height: 32rem;
+}
+.diploma_lower_footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 60px;
+  margin-left: 30px;
+  width: 200px;
+  height: 15rem;
+}
+.left_footer img {
+  margin-top: 10%;
+  margin-bottom: 7%;
+}
+#github_icon,
+.github {
+  font-size: 1.7em;
+  margin-left: 15px;
+  margin-top: 5px;
+}
+.github {
+  font-weight: 600;
+}
+.lower_left_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.lower_left_footer img {
+  width: 100px;
+}
+.tel_link {
+  color: rgb(196, 196, 196);
+  font-size: small;
+}
+.tel_link:hover {
+  text-decoration: underline;
+}
+/*footer*/
+
+/*Responsiveness*/
+@media (max-width: 1000px) {
+  @keyframes slide {
+  50% {
+    transform: translateX(95px);
+  }
+}
+  .marqueeContainer {
+    font-size: .8rem;
+  }
+  #menuButton {
+    width: 2rem;
+    height: 2rem;
+    padding: 0;
+    background-color: transparent;
+    color: black;
+  }
+  #closeButton {
+    background-color: black;
+    color: black;
+    width: 2rem;
+    height: 2rem;
+    padding: 0;
+  }
+  header .home,
+  header .courses,
+  header .whyAIt,
+  header .career,
+  header .resources,
+  header .faq,
+  header .earn,
+  header .login,
+  header .apply_now_button_link {
+    display: none;
+  }
+  #menuButton {
+    display: block;
+  }
+  .side .apply_now_button_link {
+    display: block;
+  }
+  .dropdown {
+    position: relative;
+  }
+  .dropdown:hover .dropdownMenu {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 10rem;
+  }
+  .courses,
+  .program {
+    font-size: 0.8rem;
+    margin-top: 0.8rem;
+    text-align: left;
+    color: rgb(82, 81, 81);
+  }
+  .courses p,
+  .program p {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 768px) {
+  .marqueeContainer{
+    font-size: .75rem;
+  }
+  footer {
+    background-color: rgb(4, 13, 25);
+    height: auto;
+  }
+  .main_footer_container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .left_footer,
+  .right_footer {
+    width: 100%;
+    text-align: center;
+    height: auto;
+  }
+
+  .upper_right_footer,
+  .lower_right_footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .schools_upper_footer,
+  .companies_upper_footer,
+  .about_upper_footer,
+  .resources_upper_footer,
+  .featured_lower_footer,
+  .diploma_lower_footer {
+    margin: 20px 0;
+    margin-left: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .left_footer_links {
+    flex-direction: column;
+    gap: 10px;
+    margin: auto;
+  }
+
+  .lower_left_footer {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .AItSchools_footer_logo {
+    width: 60px;
+    height: auto;
+  }
+
+  #github_icon,
+  .github {
+    margin-left: 0;
+  }
+  .footer_line {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .side {
+    width: 100%;
+  }
+}

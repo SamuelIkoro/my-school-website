@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up - AItSchools</title>
+    <link rel="stylesheet" href="SignUp.css">
+  </head>
+  <body>
+    <!--Image container set by default to float left-->
+    
+    <div class="imgContainer">
+      <img src="Online Learning and Productivity Essentials.png" alt="" />
+      <h1 style="width: 80%; font-size: 2.4rem; text-align: center">
+        Learn highly sought after skills without hassle.
+      </h1>
+      <ul>
+        <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+      </ul>
+      <h4>2025 © AltSchool Africa. All rights reserved.</h4>
+    </div>
+    <!--Sign in container-->
+    <div class="container">
+      <!--Sub container for the main content-->
+      <div class="formContainer">
+        <h5>
+          Already an AITScholar? <a href="/AITSchoolsSignIn.html">Sign In!</a>
+        </h5>
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+          "
+        >
+          <h1>Signup</h1>
+          <p style="color: rgb(131, 131, 131); font-size: 0.95rem">
+            Take the next steps to apply at AltSchool Africa
+          </p>
+        </div>
+        <div class="gridContainer">
+          <div>
+            <label for="firstName">First Name</label>
+            <input type="text" placeholder="First Name" />
+          </div>
+          <div>
+            <label for="lastName">Last Name</label>
+            <input type="text" placeholder="Last Name" />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" placeholder="Email" />
+          </div>
+          <div>
+            <label for="firstName">Gender</label>
+            <select name="gender" id="gender">
+              <option value="Select Gender">Select Gender</option>
+              <option value="male">Male</option>
+              <option value="Select Gender">Female</option>
+            </select>
+          </div>
+          <div>
+            <label for="age">Date of birth</label>
+            <input type="date" />
+          </div>
+          <div>
+            <label for="phoneNumber">Phone Number</label>
+            <input type="tel" placeholder="Phone Number" />
+          </div>
+          <div>
+            <label for="country">Country of Residence</label>
+            <input type="text" placeholder="Country of Residence" />
+          </div>
+          <div>
+            <label for="state">State of Residence</label>
+            <input type="text" placeholder="State of Residence" />
+          </div>
+          <div>
+            <label for="password">Password</label>
+            <input type="password" placeholder="Password" />
+          </div>
+          <div>
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" placeholder="Confirm Password" />
+          </div>
+          <div class="description">
+            <label for="description">How did you hear about us?</label>
+            <input
+              type="text"
+              placeholder="Optional: Let us know how you found us"
+            />
+          </div>
+        </div>
+        <p id="agreementParagraph">
+          By clicking signup, I agree to
+          <a href="#" style="font-weight: 500">Terms of Use</a> and acknowledge
+          that I have read the
+          <a href="#" style="font-weight: 500">Privacy Policy</a>.
+        </p>
+        <button type="submit" class="submitButton">Signup ➔</button>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/01e96e3fb0.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
